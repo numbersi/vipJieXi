@@ -1,6 +1,4 @@
 import re
-import urllib
-
 import requests
 from bs4 import BeautifulSoup
 from flask import request, render_template ,make_response
@@ -23,18 +21,14 @@ def mgtvJx(html, url):
     res = requests.post(host, datax)
     data = json.loads(res.content.decode('utf-8'))
     vurl =data['url']
+    return  url
     return render_template('home/player.html',url=vurl)
 def getUrl_Baiyug(url, Referer=''):
-    print("*" * 99)
-    print(url)
-    print("*" * 99)
-
     host = ''
     headers = {"Referer": 'http://baidu.com'}
     if Referer:
         host = Referer.split('/')[2]
         headers = {"Referer": Referer}
-
     if url.startswith('//'):
         print('//')
         url = 'http:' + url
@@ -42,7 +36,6 @@ def getUrl_Baiyug(url, Referer=''):
         print('/')
         print('host')
         url = 'http://' + host + url
-    print(url)
     obj = requests.get(url,
                        # allow_redirects=False,
                        headers=headers,
@@ -65,7 +58,6 @@ def getUrl_Baiyug(url, Referer=''):
 @home.route('/')
 def index():
     url = request.args.get("url") or ""
-
     if not url:
         return "<div style='width: 100%;height: 100%'><div style='margin:0 auto;'> Url=</div></div>"
     if 'mgtv' in url:
@@ -73,19 +65,16 @@ def index():
     if 'youku' in url:
         url = 'http://206dy.com/vip.php?url=' + url
         return getUrl_206dy(url)
-    print(url)
     url = 'http://206dy.com/vip.php?url=' + url
     return getUrl_206dy(url)
 @home.route('/mgtv')
 def mgtv ():
     url = request.args.get("url") or "args没有参数"
     return getUrl_Baiyug('http://yun.baiyug.cn/vip/index.php?url='+url)
-
 @home.route('/pptv')
 def pptv():
     url = request.args.get("url") or "args没有参数"
     return getUrl_206dy('http://206dy.com/vip.php?url='+url)
-#
 def xml2m3u8(s):
     rgx = re.compile("\<\!\[CDATA\[(h.*?)\]\]\>")
     m = rgx.findall(s)
@@ -101,8 +90,6 @@ def xml2m3u8(s):
         m3u8 += itemStr
 
     return  m3u8
-
-
 def pptvJx(html, url):
     import os
     res = re.search('post\("(.*).*(\{.*\})',html)
@@ -160,7 +147,6 @@ def pptvJx(html, url):
     # data = json.loads(res.content.decode('utf-8'))
     # vurl =data['url']
     # return render_template('home/player.html',url=vurl)
-
 def getUrl_206dy (url,Referer=''):
     headers = { "Referer":Referer}
     if Referer:
@@ -221,7 +207,6 @@ def parse():
                         # headers=headers
                         )
     return  res.content.decode('utf-8')
-
 @home.route('/api.php',methods=['POST'])
 def api():
     datax = request.form.to_dict()
@@ -274,8 +259,6 @@ def api207():
 
     res = requests.post(host,datax,headers=headers)
     return res.content
-
-
 def jxHtml(html,url):
     host = '//'.join([url.split('/')[0], url.split('/')[2]])
 
