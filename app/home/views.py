@@ -7,7 +7,6 @@ from . import home
 
 import json
 def mgtvJx(html, url):
-    return html
     import os
     host = re.search("var WWW_URL='(.*)'", html).group(1) + 'baiyug.php'
     hdMd5 = re.search("'(.{32})'", eval(re.search('eval\((".*")\)', html).group(1))).group(1)
