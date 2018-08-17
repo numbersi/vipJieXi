@@ -49,7 +49,6 @@ def getUrl_Baiyug(url, Referer=''):
         return getUrl_Baiyug(iframes['src'], url)
     else:
 
-        return url
         if 'mgtv' in url:
             return mgtvJx(html, url)
         if '<iframe' in html:
