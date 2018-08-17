@@ -7,8 +7,8 @@ from . import home
 
 import json
 def mgtvJx(html, url):
+    return html
     import os
-    print(html)
     host = re.search("var WWW_URL='(.*)'", html).group(1) + 'baiyug.php'
     hdMd5 = re.search("'(.{32})'", eval(re.search('eval\((".*")\)', html).group(1))).group(1)
     print("8" * 99)
@@ -21,7 +21,6 @@ def mgtvJx(html, url):
     res = requests.post(host, datax)
     data = json.loads(res.content.decode('utf-8'))
     vurl =data['url']
-    return  url
     return render_template('home/player.html',url=vurl)
 def getUrl_Baiyug(url, Referer=''):
     host = ''
