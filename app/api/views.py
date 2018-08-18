@@ -79,7 +79,7 @@ def getHtml(url,first=False):
     html.replace("\n", "$$$")
     html = re.sub(r'<script>if\(.*ssmuse1314.*\}{,10}</script>','',html)
     html = re.sub(r'<title>.*</title>','<title>NumberSi 解析</title>',html)
-    html = re.sub(r'edc193f077b6b613964bcf4bbf0712d2','',html)
+    html = re.sub(r'edc193f077b6b613964bcf4bbf0712d2','5cc256ba571f564c241888a30d1a4e9c',html)
     html = re.sub(r'//cdn\.bbbbbb\.me/yun/style\.css', '/static/style.css', html)
     html = re.sub(r'//cdn\.bbbbbb\.me.*tools\.js','/static/tools.js',html)
     html = re.sub(r'//cdn\.bbbbbb\.me.{,50}/ckplayer\.js','/static/ckplayer.js',html)
