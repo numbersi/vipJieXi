@@ -12,37 +12,43 @@
         var _hmt = _hmt || [];
         (function() {
             var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?8f6175d0c293c8af59ef57d18c1a3f84";
+            hm.src = "https://hm.baidu.com/hm.js?5cc256ba571f564c241888a30d1a4e9c";
             var s = document.getElementsByTagName("script")[0];
             s.parentNode.insertBefore(hm, s);
         })();
     </script>
 </head>
-<body >
-
+<body>
+<!--<div style="position:absolute;top:0;left:0; z-index: 2147483647;" >ssssssssssssssssssssssss</div>-->
 <div id="dplayer"></div>
-    <div>
+<div>
+    <div id="player" class="dplayer"></div>
 
-<script>
-    const dp = new DPlayer({
-        container: document.getElementById('dplayer'),
-        autoplay: false,
-        theme: '#FADFA3',
-        loop: true,
-        lang: 'zh-cn',
-        screenshot: true,
-        hotkey: true,
-        preload: 'auto',
-        volume: 0.7,
-        mutex: true,
-        video: {
-        url:decodeURIComponent('{{url}}') ,
-            type: 'hls',
-            pic:''
-        },
-        contextmenu: [
-        ]
-    });
-</script>
+
+</div>
 </body>
+    {% if scriptStr%}
+        <script> {{scriptStr}}    </script>
+    {%else%}
+            <script>
+        const dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: false,
+            theme: '#FADFA3',
+            loop: true,
+            lang: 'zh-cn',
+            screenshot: true,
+            hotkey: true,
+            preload: 'auto',
+            volume: 0.7,
+            mutex: true,
+            video: {
+                url: decodeURIComponent('{{url}}'),
+                type: 'hls',
+                pic: ''
+            },
+            contextmenu: []
+        });
+    </script>
+    {%endif%}
 </html>

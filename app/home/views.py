@@ -2,9 +2,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from flask import request, render_template ,make_response
-
 from . import home
-
 import json
 def mgtvJx(html, url):
     import os
@@ -35,7 +33,6 @@ def getUrl_Baiyug(url, Referer=''):
         print('host')
         url = 'http://' + host + url
     obj = requests.get(url,
-                       # allow_redirects=False,
                        headers=headers,
                        verify=False
                        )
@@ -54,18 +51,22 @@ def getUrl_Baiyug(url, Referer=''):
             res = re.search(r'<iframe name ="iframe-player" src="(.*)" width="100%"', html)
             if res:
                 return getUrl_Baiyug(res.group(1), url)
+        return jxHtml(html,url)
 @home.route('/')
 def index():
     url = request.args.get("url") or ""
-    if not url:
-        return "<div style='width: 100%;height: 100%'><div style='margin:0 auto;'> Url=</div></div>"
-    if 'mgtv' in url:
-        return getUrl_Baiyug('http://yun.baiyug.cn/vip/index.php?url=' + url)
-    if 'youku' in url:
-        url = 'http://206dy.com/vip.php?url=' + url
-        return getUrl_206dy(url)
+    data={'1线':'/yun?url={}'.format(url),'2线':'/dy?url={}'.format(url)}
+    return  render_template('home/index.html',data=data)
+@home.route('/dy')
+def dy206():
+    url = request.args.get("url") or ""
     url = 'http://206dy.com/vip.php?url=' + url
     return getUrl_206dy(url)
+@home.route('/yun')
+def ayun():
+    url = request.args.get("url") or ""
+    url = 'http://yun.baiyug.cn/vip/index.php?url='+url
+    return getUrl_Baiyug(url)
 @home.route('/mgtv')
 def mgtv ():
     url = request.args.get("url") or "args没有参数"
@@ -173,7 +174,6 @@ def getUrl_206dy (url,Referer=''):
                 return getUrl_206dy(res.group(1),url)
         print('no ifarme')
         return jxHtml(html,url)
-
 @home.route('/parse.php',methods=['GET', 'POST'])
 def parse():
     headers = {
@@ -209,7 +209,6 @@ def parse():
 @home.route('/api.php',methods=['POST'])
 def api():
     datax = request.form.to_dict()
-
     host = datax.pop('host')
     print(host)
     print(datax)
@@ -220,10 +219,6 @@ def api():
         "Connection": "keep-alive",
         "Content-Length": "125",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        # "Cookie": "UM_distinctid=1651eec3fa9329-03c5706e34a368-514d2f1f-1fa400-1651eec3faa800; player_forcedType=h5_VOD",
-        # "Host": '206dy.com',
-        # "Origin": 'https://206dy.com',
-        # "Referer": "https://206dy.com/207/Box1.php?url=http://v.pptv.com/show/3hQBfibdNvfte3EQ.html",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
         "X-Requested-With": "XMLHttpRequest",
     }
@@ -231,7 +226,6 @@ def api():
 
     res = requests.post(host,datax,headers=headers)
     print(res.content)
-
     return res.content
 @home.route('/207/api.php',methods=['POST'])
 def api207():
@@ -247,10 +241,6 @@ def api207():
         "Connection": "keep-alive",
         "Content-Length": "125",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        # "Cookie": "UM_distinctid=1651eec3fa9329-03c5706e34a368-514d2f1f-1fa400-1651eec3faa800; player_forcedType=h5_VOD",
-        # "Host": '206dy.com',
-        # "Origin": 'https://206dy.com',
-        # "Referer": "https://206dy.com/207/Box1.php?url=http://v.pptv.com/show/3hQBfibdNvfte3EQ.html",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
         "X-Requested-With": "XMLHttpRequest",
     }
@@ -260,14 +250,18 @@ def api207():
     return res.content
 def jxHtml(html,url):
     host = '//'.join([url.split('/')[0], url.split('/')[2]])
-
-    if 'kplayer.js' in html:
-        # res = re.search(r'<script type="text/javascript" src="(.*)ckplayer/ckplayer.js" charset="utf-8">', html).group(1)
-        # host ='http://' + res.split('/')[2]
-        html = re.sub(r'src="', 'src="'+host+'/', html)
-        html = re.sub(r'href="', 'href="'+host+'/', html)
+    if 'QQ看点视频' in html:
+        url = re.search('<video src="(.*?)"',html).group(1)
+        return  render_template('home/QQkandian.html',url=url)
+    if '27pan' in html:
+        return  '''<iframe id="sigu" scrolling="no" allowtransparency="true" frameborder="0" src="{}" width="100%" height="100%" allowfullscreen="true"></iframe>'''.format(url)
+    if 'baiyug.' in url:
+        res = re.search(r'<script type="text/javascript" src="(.*)ckplayer/ckplayer.js" charset="utf-8">', html).group(1)
+        host = res
+        html = re.sub(r'src="baiyug', 'src="'+res+'/baiyug', html)
+        html = re.sub(r'href="baiyug', 'href="'+res+'/baiyug', html)
     if 'DPlayer.min.js' in html:
-        cndJs = {
+        cndJs = { 
                  'https://le.206dy.com/ckplayer/ckplay.js':'/ckplayer/ckplay.js',
                  'https://le.206dy.com/load.gif':'/load.gif',
                  'https://le.206dy.com/ckplayer/ckplayer.swf':'/ckplayer/ckplayer.swf',
@@ -279,10 +273,19 @@ def jxHtml(html,url):
         for key in cndJs:
             html = html.replace(cndJs[key], key)
     postUrl = re.search('post\("(.*php)",',html).group(1)
-    reStr = ' host :"{}" ,"key"'.format(host+postUrl)
-    html = re.sub(r'"key"', reStr, html)
+    reStr1 = ' host :"{}" ,"key"'.format(host+postUrl)
+    reStr2 = ' host :"{}" ,"md5"'.format(host)
+    html = re.sub(r'"md5"', reStr2, html)
+    html = re.sub(r'"key"', reStr1, html)
     res = re.search(r'<!DOCTYPE html>.*</html>', html.replace("\n", "$$$")).group()
     html=   res.replace("$$$", "\n")
+    html = re.sub(r'https://hm\.baidu\.com/hm\.js\?[0-9a-zA_Z][32]','https://hm.baidu.com/hm.js?5cc256ba571f564c241888a30d1a4e9c',html)
     html = re.sub(r"{url:url,tm:tm,vuid:vuid,key:key}", "{url:url,tm:tm,vuid:vuid,key:key,domain:domain}", html)
-    # print(html)
+    html = re.sub(r'<title>.*</title>','<title>NumberSi 解析</title>',html)
     return  html
+@home.route('/baiyug.php', methods=['POST'])
+def baiyug():
+    datax = request.form.to_dict()
+    host = datax['host']
+    res = requests.post(host+'/baiyug.php',datax)
+    return res.content

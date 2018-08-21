@@ -74,7 +74,7 @@ def getHtml(url,first=False):
     if first:
         html = re.sub(r'src="/jx/v.php', 'src="/api/jx/v.php', html)
         html = re.sub(r'sigu\(\'/', 'sigu(\'/api/', html)
-        html = re.sub(r'//cdn\.bbbbbb\.me/jx/css/style\.css', '/static/style1.css', html)
+        html = re.sub(r'//cdn\.bbbbbb\.me/jx/css/style\.css', '/static/index.css', html)
         html = re.sub(r'<iframe','<iframe  allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" ',html)
     html.replace("\n", "$$$")
     html = re.sub(r'<script>if\(.*ssmuse1314.*\}{,10}</script>','',html)
