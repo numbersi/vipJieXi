@@ -251,6 +251,8 @@ def api207():
     res = requests.post(host,datax,headers=headers)
     return res.content
 def jxHtml(html,url):
+    print(html)
+    print(url)
     if 'index.m3u8' in url:
         return  render_template('home/QQkandian.html',url=url.split('url=')[1])
     host = '//'.join([url.split('/')[0], url.split('/')[2]])
@@ -264,8 +266,13 @@ def jxHtml(html,url):
         host = res
         html = re.sub(r'src="baiyug', 'src="'+res+'/baiyug', html)
         html = re.sub(r'href="baiyug', 'href="'+res+'/baiyug', html)
-
+    else:
+        html = re.sub(r'src="s', 'src="' + host + "/s", html)
+        html = re.sub(r'src="p', 'src="' + host + "/p", html)
+        html = re.sub(r'href="s', 'href="' + host + "/s", html)
+        html = re.sub(r'href="p', 'href="' + host + "/p", html)
     if '206' in url:
+        print('206')
         if 'DPlayer.min.js' in html:
             cndJs = {
                 'https://le.206dy.com/ckplayer/ckplay.js': '/ckplayer/ckplay.js',
@@ -276,14 +283,8 @@ def jxHtml(html,url):
                 'https://cdn.bootcss.com/hls.js/0.9.1/hls.min.js': '/ckplayer/hls.min.js',
                 'https://cdn.bootcss.com/flv.js/1.4.2/flv.min.js': '/ckplayer/flv.min.js'
             }
-            html = re.sub(r'src="s', 'src="' + host+"/s", html)
-            html = re.sub(r'src="p', 'src="' + host+"/p", html)
-            html = re.sub(r'href="s', 'href="' + host+"/s", html)
-            html = re.sub(r'href="p', 'href="' + host+"/p", html)
             for key in cndJs:
                 html = html.replace(cndJs[key], key)
-        # print(html)
-        print(host)
     postUrl = re.search('post\("(.*php)",',html).group(1)
     reStr1 = ' host :"{}" ,"key"'.format(host+postUrl)
     reStr2 = ' host :"{}" ,"md5"'.format(host)
@@ -301,3 +302,8 @@ def baiyug():
     host = datax['host']
     res = requests.post(host+'/baiyug.php',datax)
     return res.content
+
+@home.route('/video/qiyi2.php')
+def videoQiyi():
+    url = request.args.get("url") or ""
+    return requests.get('http://api.jxegc.com/video/qiyi2.php?url='+url).content
