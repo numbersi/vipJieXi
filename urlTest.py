@@ -1,5 +1,5 @@
 import  requests
 
 
-html = requests.get('https://zuidajiexi.net/m3u8.html?url=http://cn2.zuidadianying.com/20180811/FjyjdED7/index.m3u8').content.decode()
+html = requests.get('http://api2.my230.com/?vid=27pan76467D748097AB78').content.decode()
 print(html)

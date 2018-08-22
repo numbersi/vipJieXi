@@ -43,7 +43,7 @@ def getUrl_Baiyug(url, Referer=''):
         print('have ifarme')
         return getUrl_Baiyug(iframes['src'], url)
     else:
-
+        print( 'no ifarme')
         if 'mgtv' in url:
             return mgtvJx(html, url)
         if '<iframe' in html:
@@ -147,7 +147,7 @@ def pptvJx(html, url):
     # data = json.loads(res.content.decode('utf-8'))
     # vurl =data['url']
     # return render_template('home/player.html',url=vurl)
-def getUrl_206dy (url,Referer=''):
+def getUrl_206dy (url,Referer='http://www.baidu.com'):
     headers = { "Referer":Referer}
     if Referer:
         host = Referer.split('/')[2]
@@ -159,7 +159,9 @@ def getUrl_206dy (url,Referer=''):
             url = 'http://'+host + url
     obj = requests.get(url,
                        # allow_redirects=False,
-                       headers =headers)
+                       headers = headers,
+                       verify =False
+                       )
     html = obj.content.decode()
     htmlObj = BeautifulSoup(html, 'lxml')
     iframes = htmlObj.find('iframe')
@@ -249,6 +251,8 @@ def api207():
     res = requests.post(host,datax,headers=headers)
     return res.content
 def jxHtml(html,url):
+    if 'index.m3u8' in url:
+        return  render_template('home/QQkandian.html',url=url.split('url=')[1])
     host = '//'.join([url.split('/')[0], url.split('/')[2]])
     if 'QQ看点视频' in html:
         url = re.search('<video src="(.*?)"',html).group(1)
@@ -260,18 +264,26 @@ def jxHtml(html,url):
         host = res
         html = re.sub(r'src="baiyug', 'src="'+res+'/baiyug', html)
         html = re.sub(r'href="baiyug', 'href="'+res+'/baiyug', html)
-    if 'DPlayer.min.js' in html:
-        cndJs = { 
-                 'https://le.206dy.com/ckplayer/ckplay.js':'/ckplayer/ckplay.js',
-                 'https://le.206dy.com/load.gif':'/load.gif',
-                 'https://le.206dy.com/ckplayer/ckplayer.swf':'/ckplayer/ckplayer.swf',
-                 'https://cdn.bootcss.com/dplayer/1.22.2/DPlayer.min.js': '/ckplayer/DPlayer.min.js',
-                 'https://cdn.bootcss.com/dplayer/1.22.2/DPlayer.min.css': '/ckplayer/DPlayer.min.css',
-                 'https://cdn.bootcss.com/hls.js/0.9.1/hls.min.js': '/ckplayer/hls.min.js',
-                 'https://cdn.bootcss.com/flv.js/1.4.2/flv.min.js': '/ckplayer/flv.min.js'
-                 }
-        for key in cndJs:
-            html = html.replace(cndJs[key], key)
+
+    if '206' in url:
+        if 'DPlayer.min.js' in html:
+            cndJs = {
+                'https://le.206dy.com/ckplayer/ckplay.js': '/ckplayer/ckplay.js',
+                'https://le.206dy.com/load.gif': '/load.gif',
+                'https://le.206dy.com/ckplayer/ckplayer.swf': '/ckplayer/ckplayer.swf',
+                'https://cdn.bootcss.com/dplayer/1.22.2/DPlayer.min.js': '/ckplayer/DPlayer.min.js',
+                'https://cdn.bootcss.com/dplayer/1.22.2/DPlayer.min.css': '/ckplayer/DPlayer.min.css',
+                'https://cdn.bootcss.com/hls.js/0.9.1/hls.min.js': '/ckplayer/hls.min.js',
+                'https://cdn.bootcss.com/flv.js/1.4.2/flv.min.js': '/ckplayer/flv.min.js'
+            }
+            html = re.sub(r'src="s', 'src="' + host+"/s", html)
+            html = re.sub(r'src="p', 'src="' + host+"/p", html)
+            html = re.sub(r'href="s', 'href="' + host+"/s", html)
+            html = re.sub(r'href="p', 'href="' + host+"/p", html)
+            for key in cndJs:
+                html = html.replace(cndJs[key], key)
+        # print(html)
+        print(host)
     postUrl = re.search('post\("(.*php)",',html).group(1)
     reStr1 = ' host :"{}" ,"key"'.format(host+postUrl)
     reStr2 = ' host :"{}" ,"md5"'.format(host)
