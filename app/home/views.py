@@ -254,7 +254,7 @@ def jxHtml(html,url):
     print(html)
     print(url)
     if 'index.m3u8' in url:
-        return  render_template('home/QQkandian.html',url=url.split('url=')[1])
+        return  render_template('home/QQkandian.html',url=url.split('url=')[1].split('&')[0])
     host = '//'.join([url.split('/')[0], url.split('/')[2]])
     if 'QQ看点视频' in html:
         url = re.search('<video src="(.*?)"',html).group(1)
