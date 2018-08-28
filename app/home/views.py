@@ -32,6 +32,7 @@ def getUrl_Baiyug(url, Referer=''):
         print('/')
         print('host')
         url = 'http://' + host + url
+    print(url)
     obj = requests.get(url,
                        headers=headers,
                        verify=False
@@ -56,6 +57,8 @@ def getUrl_Baiyug(url, Referer=''):
 def index():
     url = request.args.get("url") or ""
     data={'1线':'/yun?url={}'.format(url),'2线':'/dy?url={}'.format(url)}
+    if '27pan' in url:
+        data={'1线':'/dy?url={}'.format(url),'2线':'/yun?url={}'.format(url)}
     return  render_template('home/index.html',data=data)
 @home.route('/dy')
 def dy206():
@@ -221,8 +224,10 @@ def api():
         "Connection": "keep-alive",
         "Content-Length": "125",
         "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        'referer': 'https://le.206dy.com/Box.php?url=https://www.iqiyi.com/v_19rr2akbkk.html',
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
         "X-Requested-With": "XMLHttpRequest",
+        'Cookie':'s'
     }
 
 
