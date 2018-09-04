@@ -304,8 +304,19 @@ def jxHtml(html,url):
 @home.route('/baiyug.php', methods=['POST'])
 def baiyug():
     datax = request.form.to_dict()
+    headers = {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Accept-Language": "h-CN,zh;q=0.9",
+        "Connection": "keep-alive",
+        "Content-Length": "125",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1",
+        "X-Requested-With": "XMLHttpRequest",
+        'Cookie':'s'
+    }
     host = datax['host']
-    res = requests.post(host+'/baiyug.php',datax)
+    res = requests.post(host+'/baiyug.php',datax,headers=headers)
     return res.content
 
 @home.route('/video/qiyi2.php')
