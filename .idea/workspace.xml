@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="445ebe6a-46b5-42ba-b9c9-f5ef853d747f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer/ckplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer/m3u8.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer/style.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/player/ckplayer/ckplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/player/ckplayer/style.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer/ckplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer/language.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/player/ckplayer/language.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/utils/commons.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/utf-8' 'ckplayer  - 副本.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/static/utf-8' 'ckplayer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/style.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/views.py" afterPath="$PROJECT_DIR$/app/home/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urlTest.py" afterPath="$PROJECT_DIR$/urlTest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +30,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/dyapi$xstm.coverage" NAME="xstm Coverage Results" MODIFIED="1536418804798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dyapi$views2018814.coverage" NAME="views2018年8月14日 Coverage Results" MODIFIED="1534387297162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/home" />
-    <SUITE FILE_PATH="coverage/dyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1535442411331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1536421217744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dyapi$d.coverage" NAME="d Coverage Results" MODIFIED="1535278385843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dyapi$360kan.coverage" NAME="360kan Coverage Results" MODIFIED="1536227499605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dyapi$iqiyi.coverage" NAME="iqiyi Coverage Results" MODIFIED="1536372256872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dyapi$views.coverage" NAME="views Coverage Results" MODIFIED="1534387282539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/home" />
-    <SUITE FILE_PATH="coverage/dyapi$urlTest.coverage" NAME="urlTest Coverage Results" MODIFIED="1534942677294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dyapi$urlTest.coverage" NAME="urlTest Coverage Results" MODIFIED="1536112692124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dyapi$xcq91.coverage" NAME="xcq91 Coverage Results" MODIFIED="1536251838443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
@@ -28,62 +46,49 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+            <state relative-caret-position="-720">
+              <caret line="240" column="9" lean-forward="true" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#172#818#0" expanded="false" />
-                <element signature="e#859#1911#0" expanded="false" />
-                <element signature="e#2708#2812#0" expanded="false" />
-                <element signature="e#2834#3252#0" expanded="false" />
-                <element signature="e#3280#5748#0" expanded="false" />
-                <element signature="e#6831#8087#0" expanded="false" />
-                <element signature="e#6841#7611#0" expanded="false" />
-                <element signature="e#9024#9702#0" expanded="false" />
+                <element signature="e#185#831#0" expanded="false" />
+                <element signature="e#2721#2825#0" expanded="false" />
+                <element signature="e#2847#3265#0" expanded="false" />
+                <element signature="e#3293#5761#0" expanded="false" />
+                <element signature="e#6913#7683#0" expanded="false" />
+                <element signature="e#10165#10843#0" expanded="false" />
+                <element signature="e#10870#13512#0" expanded="false" />
+                <element signature="e#13576#14302#0" expanded="false" />
+                <marker date="1536421759923" expanded="false" signature="6898:8159" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/python/Python36/Lib/site-packages/requests/api.py">
+      <file leaf-file-name="360kan.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/360kan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="17" />
+            <state relative-caret-position="57">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adapters.py" pinned="false" current-in-tab="false">
-        <entry file="file://D:/python/Python36/Lib/site-packages/requests/adapters.py">
+      <file leaf-file-name="xcq91.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xcq91.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9158">
-              <caret line="510" column="0" lean-forward="false" selection-start-line="510" selection-start-column="0" selection-end-line="510" selection-end-column="0" />
+            <state relative-caret-position="361">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="27pan.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/home/27pan.html">
+      <file leaf-file-name="language.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/player/ckplayer/language.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1534739231600" expanded="true" signature="1508:1566" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QQkandian.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/home/QQkandian.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,51 +98,47 @@
         <entry file="file://$PROJECT_DIR$/urlTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/d.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js.js">
+      <file leaf-file-name="xstm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9462">
-              <caret line="500" column="25" lean-forward="false" selection-start-line="500" selection-start-column="19" selection-end-line="500" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#38#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/home/player.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="114">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/style.css">
+      <file leaf-file-name="language.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/ckplayer/language.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ckplayer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/ckplayer/ckplayer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commons.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/utils/commons.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -156,14 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tem</find>
-      <find>{{</find>
-      <find>$</find>
-      <find>EXTINF</find>
-      <find>eval</find>
-      <find>WWW_URL</find>
-      <find>kplayer.js</find>
-      <find>pptv</find>
       <find>jxHtml</find>
       <find>crossdomain.xml</find>
       <find>app</find>
@@ -186,6 +179,14 @@
       <find>videoid</find>
       <find>/ckplayer/</find>
       <find>m3u8</find>
+      <find>document</find>
+      <find>video</find>
+      <find>_0x5708</find>
+      <find>form</find>
+      <find>lequgirl</find>
+      <find>fuck</find>
+      <find>cookielib</find>
+      <find>urllib2</find>
     </findStrings>
     <replaceStrings>
       <replace>admin</replace>
@@ -194,6 +195,8 @@
       <replace>@home</replace>
       <replace>api</replace>
       <replace>/static</replace>
+      <replace>http.cookiejar</replace>
+      <replace>urllib.request</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\SI\Desktop\dyapi</dir>
@@ -221,7 +224,6 @@
         <option value="$PROJECT_DIR$/app/static/style.css" />
         <option value="$PROJECT_DIR$/app/api/__init__.py" />
         <option value="$PROJECT_DIR$/app/api2/__init__.py" />
-        <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/api2/views.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/app/api/views.py" />
@@ -230,9 +232,18 @@
         <option value="$PROJECT_DIR$/app/templates/home/player.html" />
         <option value="$PROJECT_DIR$/app/templates/home/QQkandian.html" />
         <option value="$PROJECT_DIR$/app/templates/home/27pan.html" />
-        <option value="$PROJECT_DIR$/js.js" />
-        <option value="$PROJECT_DIR$/urlTest.py" />
         <option value="$PROJECT_DIR$/d.py" />
+        <option value="$PROJECT_DIR$/urlTest.py" />
+        <option value="$PROJECT_DIR$/360kan.py" />
+        <option value="$PROJECT_DIR$/js.js" />
+        <option value="$PROJECT_DIR$/xcq91.py" />
+        <option value="$PROJECT_DIR$/a.html" />
+        <option value="$PROJECT_DIR$/app/static/ckp.js" />
+        <option value="$PROJECT_DIR$/app/utils/__init__.py" />
+        <option value="$PROJECT_DIR$/app/utils/commons.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/iqiyi.py" />
+        <option value="$PROJECT_DIR$/xstm.py" />
         <option value="$PROJECT_DIR$/app/home/views.py" />
       </list>
     </option>
@@ -268,6 +279,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,6 +302,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dyapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dyapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -307,47 +337,14 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dyapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dyapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dyapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dyapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,17 +353,19 @@
     <property name="last_opened_file_path" value="$USER_HOME$/.virtualenvs/dyapi-ScpDeqFa/Scripts/python.exe" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/SI/Desktop/dyapi/app/home/views.py" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SI\Desktop\dyapi\app\static" />
-      <recent name="C:\Users\SI\Desktop\dyapi\app\templates\home" />
-      <recent name="C:\Users\SI\Desktop\dyapi\app\home" />
-      <recent name="C:\Users\SI\Desktop\dyapi" />
-      <recent name="C:\Users\SI\Desktop\dyapi\app\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SI\Desktop\dyapi\app\static\player" />
       <recent name="C:\Users\SI\Desktop\dyapi\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SI\Desktop\dyapi\app\static\player\ckplayer" />
+      <recent name="C:\Users\SI\Desktop\dyapi\app\static\ckplayer\ckplayer" />
+      <recent name="C:\Users\SI\Desktop\dyapi\app\static\ckplayer" />
+      <recent name="C:\Users\SI\Desktop\dyapi\app" />
+      <recent name="C:\Users\SI\Desktop\dyapi\app\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -401,45 +400,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dyapi" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/home/views.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="views2018年8月14日" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/home" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dyapi" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/home/views2018年8月14日.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="urlTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="360kan" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -452,13 +413,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="dyapi" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/urlTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/360kan.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="d" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="xcq91" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -471,7 +432,45 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="dyapi" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/d.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xcq91.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="iqiyi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dyapi" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iqiyi.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="xstm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dyapi" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xstm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -627,18 +626,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.manage" />
-      <item index="1" class="java.lang.String" itemvalue="Python.views" />
-      <item index="2" class="java.lang.String" itemvalue="Python.views2018年8月14日" />
-      <item index="3" class="java.lang.String" itemvalue="Python.urlTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.d" />
+      <item index="1" class="java.lang.String" itemvalue="Python.360kan" />
+      <item index="2" class="java.lang.String" itemvalue="Python.xcq91" />
+      <item index="3" class="java.lang.String" itemvalue="Python.iqiyi" />
+      <item index="4" class="java.lang.String" itemvalue="Python.xstm" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.manage" />
-        <item index="1" class="java.lang.String" itemvalue="Python.d" />
-        <item index="2" class="java.lang.String" itemvalue="Python.urlTest" />
-        <item index="3" class="java.lang.String" itemvalue="Python.views2018年8月14日" />
-        <item index="4" class="java.lang.String" itemvalue="Python.views" />
+        <item index="1" class="java.lang.String" itemvalue="Python.xstm" />
+        <item index="2" class="java.lang.String" itemvalue="Python.iqiyi" />
+        <item index="3" class="java.lang.String" itemvalue="Python.xcq91" />
+        <item index="4" class="java.lang.String" itemvalue="Python.360kan" />
       </list>
     </recent_temporary>
   </component>
@@ -751,21 +750,35 @@
       <option name="project" value="LOCAL" />
       <updated>1534992662514</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="206 解析   aqy的解析">
+      <created>1535444990282</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1535444990282</updated>
+    </task>
+    <task id="LOCAL-00016" summary="206 解析   aqy的解析">
+      <created>1536035476390</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1536035476390</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31236672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3411514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40347072" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26226014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37201735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2675906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -826,119 +839,52 @@
           <line>56</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>364</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>368</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>378</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>382</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>350</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>367</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>365</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/home/views.py</url>
+          <line>366</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Python36/Lib/site-packages/werkzeug/debug/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Python36/Lib/http/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7619">
-          <caret line="418" column="0" lean-forward="false" selection-start-line="418" selection-start-column="0" selection-end-line="418" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Python36/Lib/site-packages/werkzeug/serving.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5586">
-          <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Python36/Lib/socketserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12122">
-          <caret line="642" column="0" lean-forward="false" selection-start-line="642" selection-start-column="0" selection-end-line="642" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Python36/Lib/threading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16283">
-          <caret line="863" column="0" lean-forward="false" selection-start-line="863" selection-start-column="0" selection-end-line="863" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Python36/Lib/site-packages/flask/blueprints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3971">
-          <caret line="212" column="41" lean-forward="false" selection-start-line="212" selection-start-column="41" selection-end-line="212" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements-dev.txt" />
-    <entry file="file://D:/python/Python36/Lib/site-packages/flask/helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3629">
-          <caret line="215" column="4" lean-forward="false" selection-start-line="215" selection-start-column="4" selection-end-line="215" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/home/md5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/2.js" />
-    <entry file="file://D:/python/Python36/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5681">
-          <caret line="301" column="4" lean-forward="false" selection-start-line="301" selection-start-column="4" selection-end-line="301" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/node_modules/md5/md5.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/s.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/home/player1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -950,13 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/python/Python36/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1030,20 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/api/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1072,13 +997,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/home/views2018年8月14日.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/home/views二〇一八年八月十四日 .py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -1094,13 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/home/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1108,19 +1019,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style.css" />
     <entry file="file://$PROJECT_DIR$/app/templates/home/player.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
           <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,7 +1040,7 @@
           <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1534739231600" expanded="true" signature="1508:1566" ph="..." />
           </folding>
         </state>
@@ -1148,7 +1050,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9158">
           <caret line="510" column="0" lean-forward="false" selection-start-line="510" selection-start-column="0" selection-end-line="510" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,27 +1057,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
           <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="17" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/views2018年8月14日.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/home/s.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/yun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1539">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9462">
-          <caret line="500" column="25" lean-forward="false" selection-start-line="500" selection-start-column="19" selection-end-line="500" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#38#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urlTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="155">
+          <caret line="208" column="23" lean-forward="false" selection-start-line="208" selection-start-column="23" selection-end-line="208" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1184,24 +1113,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="72" column="3172" lean-forward="false" selection-start-line="72" selection-start-column="3150" selection-end-line="72" selection-end-column="3172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/ckp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23180">
+          <caret line="1220" column="5" lean-forward="false" selection-start-line="1220" selection-start-column="5" selection-end-line="1220" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Python36/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/language.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/utils/commons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/ckplayer/language.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/ckplayer/ckplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iqiyi.py" />
+    <entry file="file://D:/python/Python36/Lib/PyV8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urlTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/player/ckplayer/language.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/在线播放延禧攻略 第69集 - 高清资源 - 飞鸟TV.TS">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/360kan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xcq91.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        <state relative-caret-position="-720">
+          <caret line="240" column="9" lean-forward="true" selection-start-line="240" selection-start-column="9" selection-end-line="240" selection-end-column="9" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#172#818#0" expanded="false" />
-            <element signature="e#859#1911#0" expanded="false" />
-            <element signature="e#2708#2812#0" expanded="false" />
-            <element signature="e#2834#3252#0" expanded="false" />
-            <element signature="e#3280#5748#0" expanded="false" />
-            <element signature="e#6831#8087#0" expanded="false" />
-            <element signature="e#6841#7611#0" expanded="false" />
-            <element signature="e#9024#9702#0" expanded="false" />
+            <element signature="e#185#831#0" expanded="false" />
+            <element signature="e#2721#2825#0" expanded="false" />
+            <element signature="e#2847#3265#0" expanded="false" />
+            <element signature="e#3293#5761#0" expanded="false" />
+            <element signature="e#6913#7683#0" expanded="false" />
+            <element signature="e#10165#10843#0" expanded="false" />
+            <element signature="e#10870#13512#0" expanded="false" />
+            <element signature="e#13576#14302#0" expanded="false" />
+            <marker date="1536421759923" expanded="false" signature="6898:8159" ph="..." />
           </folding>
         </state>
       </provider>

@@ -1,7 +1,7 @@
 import re
 import requests
 from bs4 import BeautifulSoup
-from flask import request, render_template ,make_response
+from flask import request, render_template, make_response, current_app
 from . import home
 import json
 def mgtvJx(html, url):
@@ -178,6 +178,9 @@ def getUrl_206dy (url,Referer='http://www.baidu.com'):
             if res:
                 return getUrl_206dy(res.group(1),url)
         print('no ifarme')
+        print(url)
+        print(html)
+        return html
         return jxHtml(html,url)
 @home.route('/parse.php',methods=['GET', 'POST'])
 def parse():
@@ -214,26 +217,43 @@ def parse():
 @home.route('/api.php',methods=['POST'])
 def api():
     datax = request.form.to_dict()
-    host = datax.pop('host')
-    print(host)
-    print(datax)
-    headers = {
-        "Accept": "application/json, text/javascript, */*; q=0.01",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Accept-Language": "h-CN,zh;q=0.9",
-        "Connection": "keep-alive",
-        "Content-Length": "125",
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        'referer': 'https://le.206dy.com/Box.php?url=https://www.iqiyi.com/v_19rr2akbkk.html',
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
-        "X-Requested-With": "XMLHttpRequest",
-        'Cookie':'s'
-    }
+    if datax['host']:
+        host = datax.pop('host')
+        print(host)
+        print(datax)
+        headers = {
+            "Accept": "application/json, text/javascript, */*; q=0.01",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "h-CN,zh;q=0.9",
+            "Connection": "keep-alive",
+            "Content-Length": "125",
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            'referer': 'https://le.206dy.com/Box.php?url=https://www.iqiyi.com/v_19rr2akbkk.html',
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36",
+            "X-Requested-With": "XMLHttpRequest",
+            'Cookie':'s'
+        }
 
 
-    res = requests.post(host,datax,headers=headers)
-    print(res.content)
-    return res.content
+        res = requests.post(host,datax,headers=headers)
+        print(res.content)
+        return res.content
+    else:
+        params = request.form.to_dict()
+        url = 'http://vip.xcq91.top/player/api.php'
+        print(params)
+        html = requests.post(url, data=params,
+                             headers={'Host': 'vip.xcq91.top', 'Connection': 'keep-alive', 'Content-Length': '604',
+                                      'Accept': 'application/json, text/javascript, */*; q=0.01',
+                                      'Origin': 'http://vip.xcq91.top', 'X-Requested-With': 'XMLHttpRequest',
+                                      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36',
+                                      'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                                      'Accept-Encoding': 'gzip, deflate',
+                                      'Accept-Language': 'zh-CN,zh;q=0.9'}).content.decode()
+        print(html)
+        return html
+
+
 @home.route('/207/api.php',methods=['POST'])
 def api207():
     datax = request.form.to_dict()
@@ -316,10 +336,62 @@ def baiyug():
         'Cookie':'s'
     }
     host = datax['host']
+
     res = requests.post(host+'/baiyug.php',datax,headers=headers)
+    print(res.content   )
     return res.content
 
 @home.route('/video/qiyi2.php')
 def videoQiyi():
     url = request.args.get("url") or ""
     return requests.get('http://api.jxegc.com/video/qiyi2.php?url='+url).content
+@home.route('/xcq91')
+def xcq91():
+    url = request.args.get("url") or ""
+    url = 'http://api.xcq91.top/?url='+url
+    headersStr='''Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cache-Control: no-cache
+Connection: keep-alive
+Host: api.xcq91.top
+Pragma: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36'''
+    headers = {}
+    for item in headersStr.split('\n'):
+        c = item.split(': ')
+        headers.update({c[0]: c[1]})
+    res  = requests.get(url,headers=headers)
+    if res.status_code==200:
+        html= res.content.decode()
+        obj = BeautifulSoup(html,'lxml')
+        VipHeadersStr = '''Host: vip.xcq91.top
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: {}
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9'''.format(url)
+        headers = {}
+        for item in VipHeadersStr.split('\n'):
+            c = item.split(': ')
+
+            headers.update({c[0]: c[1]})
+        print(headers)
+        if obj.iframe:
+            url1= obj.iframe['src']
+            html1 = requests.get(url1,headers=headers).content.decode()
+            return  html1
+    return  '1'
+@home.route('/player/ckplayer/ckplayer.js')
+def get_js():
+    return current_app.send_static_file('ckplayer.js')
+
+@home.route("/<re(r'.*'):file_name>")
+def get_file(file_name):
+    ''''''
+    return current_app.send_static_file(file_name)

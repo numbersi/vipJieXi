@@ -9,7 +9,8 @@ from  app.home import  home as home_blueprint
 from  app.admin import  admin as admin_blueprint
 from  app.api import  api as api_blueprint
 from  app.api2 import  api2 as api2_blueprint
-
+from app.utils.commons import ReConverter
+app.url_map.converters["re"] = ReConverter
 # app  注册蓝图
 app.register_blueprint(home_blueprint)
 app.register_blueprint(admin_blueprint, url_prefix="/admin")

@@ -1,49 +1,34 @@
 import requests
+import re
+def getDoubanID(name):
+    url  ="https://www.douban.com/search?q="+name
+    html  =  requests.get(url).content.decode()
+    obj = BeautifulSoup(html, 'xml')
+    a = str(obj.find('a',['class','nbg']))
+    if re.search(r'sid: ([0-9]*),' ,a):
 
-import json
+        movieId = re.search(r'sid: ([0-9]*),' ,a).group(1)
+        return movieId
+    pass
+from bs4 import BeautifulSoup
 
-vid = 'y00221a60w7'  # replace with your vid
-for definition in ('shd', 'hd', 'sd'):
-    params = {
-        'isHLS': False,
-        'charge': 0,
-        'vid': vid,
-        'defn': definition,
-        'defnpayver': 1,
-        'otype': 'json',
-        'platform': 10901,
-        'sdtfrom': 'v1010',
-        'host': 'v.qq.com',
-        'fhdswitch': 0,
-        'show1080p': 1,
-    }
-    r = requests.get('http://h5vv.video.qq.com/getinfo', params=params)
-    data = json.loads(r.content[len('QZOutputJson='):-1])
-
-    url_prefix = data['vl']['vi'][0]['ul']['ui'][0]['url']
-    for stream in data['fl']['fi']:
-        if stream['name'] != definition:
-            continue
-        stream_id = stream['id']
-        urls = []
-        for d in data['vl']['vi'][0]['cl']['ci']:
-            keyid = d['keyid']
-            filename = keyid.replace('.10', '.p', 1) + '.mp4'
-            params = {
-                'otype': 'json',
-                'vid': vid,
-                'format': stream_id,
-                'filename': filename,
-                'platform': 10901,
-                'vt': 217,
-                'charge': 0,
-            }
-            r = requests.get('http://h5vv.video.qq.com/getkey', params=params)
-            data = json.loads(r.content[len('QZOutputJson='):-1])
-            url = '%s/%s?sdtfrom=v1010&vkey=%s' % (url_prefix, filename, data['key'])
-            urls.append(url)
-
-            print('stream:', stream['name'])
-        for url in urls:
-            print(url)
-
+def getDataByname(name,page=1):
+    # 采集 搜索名字
+    url = "http://cj2.tv6.com/mox/inc/api.php?ac=list&pg={}&wd={}".format(page,name)
+    # url = 'http://cj2.tv6.com/mox/inc/api.php?ac=videolist&pg=&ids=49263'
+    html = requests.get(url).content.decode()
+    obj = BeautifulSoup(html,'xml')
+    print(obj)
+    videos = obj.find_all('video')
+    for video in videos:
+        print(video.id.text)
+        last = video.last
+        print(last.text,end='\n')
+        name = video.find('name').text
+        print('#'*100)
+        # movieId = getDoubanID(name)
+        print(name)
+    return 
+if __name__ == '__main__':
+    kword= '天才'
+    getDataByname(kword)
