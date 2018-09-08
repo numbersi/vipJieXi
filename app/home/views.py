@@ -217,7 +217,7 @@ def parse():
 @home.route('/api.php',methods=['POST'])
 def api():
     datax = request.form.to_dict()
-    if datax['host']:
+    if 'host' in datax:
         host = datax.pop('host')
         print(host)
         print(datax)
