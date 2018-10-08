@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="445ebe6a-46b5-42ba-b9c9-f5ef853d747f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/ckplayer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/language.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/style.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/home/views.py" afterPath="$PROJECT_DIR$/app/home/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/static/ckplayer.js" afterPath="$PROJECT_DIR$/app/static/ckplayer.js" />
@@ -20,9 +25,9 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/dyapi$xstm.coverage" NAME="xstm Coverage Results" MODIFIED="1538057825313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dyapi$views2018814.coverage" NAME="views2018年8月14日 Coverage Results" MODIFIED="1534387297162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/home" />
-    <SUITE FILE_PATH="coverage/dyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1538881931124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dyapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1538968600010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dyapi$360kan.coverage" NAME="360kan Coverage Results" MODIFIED="1536227499605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dyapi$d.coverage" NAME="d Coverage Results" MODIFIED="1538888872665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dyapi$d.coverage" NAME="d Coverage Results" MODIFIED="1538900444429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dyapi$iqiyi.coverage" NAME="iqiyi Coverage Results" MODIFIED="1536372256872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dyapi$views.coverage" NAME="views Coverage Results" MODIFIED="1534387282539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/home" />
     <SUITE FILE_PATH="coverage/dyapi$urlTest.coverage" NAME="urlTest Coverage Results" MODIFIED="1536112692124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -34,30 +39,58 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            <state relative-caret-position="678">
+              <caret line="461" column="20" lean-forward="true" selection-start-line="461" selection-start-column="20" selection-end-line="461" selection-end-column="20" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#187#835#0" expanded="false" />
-                <element signature="e#878#1898#0" expanded="false" />
-                <element signature="e#2291#2403#0" expanded="false" />
-                <element signature="e#2442#2565#0" expanded="false" />
-                <element signature="e#2605#2722#0" expanded="false" />
-                <element signature="e#2762#2868#0" expanded="false" />
-                <element signature="e#2892#3309#0" expanded="false" />
-                <element signature="e#3339#5864#0" expanded="false" />
-                <element signature="e#5926#6880#0" expanded="false" />
-                <element signature="e#6951#8126#0" expanded="false" />
-                <element signature="e#6961#7731#0" expanded="false" />
-                <element signature="e#8186#9906#0" expanded="false" />
-                <element signature="e#10889#12731#0" expanded="false" />
-                <element signature="e#12797#13525#0" expanded="false" />
-                <element signature="e#13581#13699#0" expanded="false" />
-                <element signature="e#13736#15145#0" expanded="false" />
-                <element signature="e#15185#16806#0" expanded="false" />
-                <element signature="e#16879#16977#0" expanded="false" />
-                <element signature="e#17011#17763#0" expanded="false" />
+                <element signature="e#2357#2469#0" expanded="false" />
+                <element signature="e#2671#2788#0" expanded="false" />
+                <element signature="e#2828#2934#0" expanded="false" />
+                <element signature="e#2958#3375#0" expanded="false" />
+                <element signature="e#3405#5930#0" expanded="false" />
+                <element signature="e#5992#6946#0" expanded="false" />
+                <element signature="e#7017#8192#0" expanded="false" />
+                <element signature="e#7027#7797#0" expanded="false" />
+                <element signature="e#8252#9972#0" expanded="false" />
+                <element signature="e#12919#13647#0" expanded="false" />
+                <element signature="e#13703#13821#0" expanded="false" />
+                <element signature="e#13858#15267#0" expanded="false" />
+                <element signature="e#15307#16928#0" expanded="false" />
+                <element signature="e#17154#17906#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ckplayer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/ckplayer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1538965373254" expanded="true" signature="187696:187705" ph="..." />
+                <marker date="1538965373254" expanded="true" signature="187873:187882" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/static/jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/python/Python36/Lib/site-packages/requests/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,42 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="a.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/a.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="s.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/s.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="77" column="14" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="14" />
-              <folding>
-                <element signature="e#489#3695#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="js.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9614">
-              <caret line="506" column="18" lean-forward="false" selection-start-line="506" selection-start-column="18" selection-end-line="506" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="xcq91.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xcq91.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="532">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="11" />
               <folding />
             </state>
@@ -127,8 +128,8 @@
       <file leaf-file-name="d.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/d.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="91" lean-forward="true" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
+            <state relative-caret-position="76">
+              <caret line="4" column="117" lean-forward="true" selection-start-line="4" selection-start-column="117" selection-end-line="4" selection-end-column="117" />
               <folding />
             </state>
           </provider>
@@ -137,7 +138,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
         <entry file="file://D:/python/Python36/Lib/site-packages/flask/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
+            <state relative-caret-position="33782">
               <caret line="1807" column="57" lean-forward="true" selection-start-line="1807" selection-start-column="57" selection-end-line="1807" selection-end-column="57" />
               <folding />
             </state>
@@ -291,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -339,6 +339,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,15 +351,15 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SI\Desktop\dyapi\app\static\player" />
+      <recent name="C:\Users\SI\Desktop\dyapi\app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\SI\Desktop\dyapi\app\static" />
       <recent name="C:\Users\SI\Desktop\dyapi\app\static\player\ckplayer" />
       <recent name="C:\Users\SI\Desktop\dyapi\app\static\ckplayer\ckplayer" />
       <recent name="C:\Users\SI\Desktop\dyapi\app\static\ckplayer" />
-      <recent name="C:\Users\SI\Desktop\dyapi\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\SI\Desktop\dyapi\app\static\player" />
       <recent name="C:\Users\SI\Desktop\dyapi\app" />
     </key>
   </component>
@@ -374,7 +375,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.d">
+  <component name="RunManager" selected="Python.manage">
     <configuration default="false" name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -627,8 +628,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.d" />
-        <item index="1" class="java.lang.String" itemvalue="Python.manage" />
+        <item index="0" class="java.lang.String" itemvalue="Python.manage" />
+        <item index="1" class="java.lang.String" itemvalue="Python.d" />
         <item index="2" class="java.lang.String" itemvalue="Python.xstm" />
         <item index="3" class="java.lang.String" itemvalue="Python.iqiyi" />
         <item index="4" class="java.lang.String" itemvalue="Python.xcq91" />
@@ -772,23 +773,30 @@
       <option name="project" value="LOCAL" />
       <updated>1536422146674</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="增加xcq91">
+      <created>1538898310681</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1538898310681</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35980812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36353946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37527114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37527114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2675906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -845,42 +853,42 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>419</line>
+          <line>425</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>423</line>
+          <line>429</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>433</line>
+          <line>439</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>436</line>
+          <line>442</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>422</line>
+          <line>428</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>420</line>
+          <line>426</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>421</line>
+          <line>427</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/app/home/views.py</url>
-          <line>58</line>
+          <line>60</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
@@ -889,13 +897,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1349">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1015,13 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python/Python36/Lib/site-packages/requests/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="627">
@@ -1075,7 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1149,7 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,11 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1534490242446" expanded="true" signature="9025:9031" ph=" " />
-            <marker date="1534490242446" expanded="true" signature="9032:9038" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1169,7 +1156,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9614">
           <caret line="506" column="18" lean-forward="false" selection-start-line="506" selection-start-column="18" selection-end-line="506" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1188,13 +1174,6 @@
         <state relative-caret-position="190">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/ckplayer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1224,53 +1203,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xcq91.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="532">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="36" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/d.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="91" lean-forward="true" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/python/Python36/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
+        <state relative-caret-position="33782">
           <caret line="1807" column="57" lean-forward="true" selection-start-line="1807" selection-start-column="57" selection-end-line="1807" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python/Python36/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="26" lean-forward="false" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="117" lean-forward="true" selection-start-line="4" selection-start-column="117" selection-end-line="4" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/ckplayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1538965373254" expanded="true" signature="187696:187705" ph="..." />
+            <marker date="1538965373254" expanded="true" signature="187873:187882" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="22" column="56" lean-forward="true" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        <state relative-caret-position="678">
+          <caret line="461" column="20" lean-forward="true" selection-start-line="461" selection-start-column="20" selection-end-line="461" selection-end-column="20" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#187#835#0" expanded="false" />
-            <element signature="e#878#1898#0" expanded="false" />
-            <element signature="e#2291#2403#0" expanded="false" />
-            <element signature="e#2442#2565#0" expanded="false" />
-            <element signature="e#2605#2722#0" expanded="false" />
-            <element signature="e#2762#2868#0" expanded="false" />
-            <element signature="e#2892#3309#0" expanded="false" />
-            <element signature="e#3339#5864#0" expanded="false" />
-            <element signature="e#5926#6880#0" expanded="false" />
-            <element signature="e#6951#8126#0" expanded="false" />
-            <element signature="e#6961#7731#0" expanded="false" />
-            <element signature="e#8186#9906#0" expanded="false" />
-            <element signature="e#10889#12731#0" expanded="false" />
-            <element signature="e#12797#13525#0" expanded="false" />
-            <element signature="e#13581#13699#0" expanded="false" />
-            <element signature="e#13736#15145#0" expanded="false" />
-            <element signature="e#15185#16806#0" expanded="false" />
-            <element signature="e#16879#16977#0" expanded="false" />
-            <element signature="e#17011#17763#0" expanded="false" />
+            <element signature="e#2357#2469#0" expanded="false" />
+            <element signature="e#2671#2788#0" expanded="false" />
+            <element signature="e#2828#2934#0" expanded="false" />
+            <element signature="e#2958#3375#0" expanded="false" />
+            <element signature="e#3405#5930#0" expanded="false" />
+            <element signature="e#5992#6946#0" expanded="false" />
+            <element signature="e#7017#8192#0" expanded="false" />
+            <element signature="e#7027#7797#0" expanded="false" />
+            <element signature="e#8252#9972#0" expanded="false" />
+            <element signature="e#12919#13647#0" expanded="false" />
+            <element signature="e#13703#13821#0" expanded="false" />
+            <element signature="e#13858#15267#0" expanded="false" />
+            <element signature="e#15307#16928#0" expanded="false" />
+            <element signature="e#17154#17906#0" expanded="false" />
           </folding>
         </state>
       </provider>

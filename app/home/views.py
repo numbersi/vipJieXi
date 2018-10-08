@@ -33,6 +33,8 @@ def getUrl_Baiyug(url, Referer=''):
         url = 'http:' + url
     if url.startswith('/'):
         url = 'http://' + host + url
+    if url.startswith('./'):
+        url= 'http://yun.baiyug.cn/vip'+url[1:]
     obj = requests.get(url,
                        headers=headers,
                        verify=False
@@ -42,11 +44,11 @@ def getUrl_Baiyug(url, Referer=''):
     iframes = htmlObj.find('iframe')
     if iframes:
         print('have ifarme')
+        print(iframes)
+
         return getUrl_Baiyug(iframes['src'], url)
     else:
         print('no ifarme')
-        if 'mgtv' in url:
-            return mgtvJx(html, url)
         if '<iframe' in html:
             print('have <iframe')
             res = re.search(r'<iframe name ="iframe-player" src="(.*)" width="100%"', html)
@@ -60,6 +62,7 @@ def index():
     url = request.args.get("url") or ""
     if not url:
         return  'url = null'
+    url = url.split('?')[0]
     data = {'1线': '/dy?url={}'.format(url), '2线': '/yun?url={}'.format(url)}
     if '27pan' in url:
         data = {'1线': '/dy?url={}'.format(url), '2线': '/yun?url={}'.format(url)}
@@ -274,7 +277,7 @@ def api():
 def api207(U):
     datax = request.form.to_dict()
 
-    host = datax.pop('host')+'/api/{}/api.php'.format(U)
+    # host = datax.pop('host')+'/api/{}/api.php'.format(U)
     host ='https://le.206dy.com/api/api/api.php'
     headerss= {'accept': 'application/json, text/javascript, */*; q=0.01', 'accept-encoding': 'gzip, deflate, br',
      'accept-language': 'zh-CN,zh;q=0.9', 'cache-control': 'no-cache', 'content-length': '145',
@@ -300,19 +303,22 @@ def jxHtml(html, url):
     if '27pan' in html:
         return '''<iframe id="sigu" scrolling="no" allowtransparency="true" frameborder="0" src="{}" width="100%" height="100%" allowfullscreen="true"></iframe>'''.format(
             url)
-    if 'baiyug.' in url:
-        print(html)
-        
-        res = re.search(r'<script type="text/javascript" src="(.*)ckplayer/ckplayer.js" charset="utf-8">', html).group(
-            1)
-        host = res
-        html = re.sub(r'src="baiyug', 'src="' + res + '/baiyug', html)
-        html = re.sub(r'href="baiyug', 'href="' + res + '/baiyug', html)
-    else:
-        html = re.sub(r'src="s', 'src="' + host + "/s", html)
-        html = re.sub(r'src="p', 'src="' + host + "/p", html)
-        html = re.sub(r'href="s', 'href="' + host + "/s", html)
-        html = re.sub(r'href="p', 'href="' + host + "/p", html)
+    return html
+
+    print(html)
+    #
+    # if 'baiyug.' in url:
+    #     print(html)
+    #     res = re.search(r'<script type="text/javascript" src="(.*)ckplayer/ckplayer.js" charset="utf-8">', html).group(
+    #         1)
+    #     host = res
+    #     html = re.sub(r'src="baiyug', 'src="' + res + '/baiyug', html)
+    #     html = re.sub(r'href="baiyug', 'href="' + res + '/baiyug', html)
+    # else:
+    #     html = re.sub(r'src="s', 'src="' + host + "/s", html)
+    #     html = re.sub(r'src="p', 'src="' + host + "/p", html)
+    #     html = re.sub(r'href="s', 'href="' + host + "/s", html)
+    #     html = re.sub(r'href="p', 'href="' + host + "/p", html)
 
 
     reStr1 = ' host :"{}" ,"key"'.format(host )
@@ -453,6 +459,7 @@ Accept-Language: zh-CN,zh;q=0.9'''.format(request.headers['User-Agent'], url)
 @home.route("/<re(r'.*'):file_name>")
 def get_file(file_name):
     ''''''
+    print(file_name)
     file_name = file_name.split('/')[-1]
     return current_app.send_static_file(file_name)
 @home.route('/tt')
